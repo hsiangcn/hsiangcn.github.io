@@ -1,0 +1,52 @@
+# Site settings
+title: 清风的博客
+email: hsiangcn@sina.com
+description: > # this means to ignore newlines until "baseurl:"
+  清风的博客
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: https://hsiangcn.github.io/ # the base hostname & protocol for your site
+rss_url: /pages/feed.xml
+author: hsiang
+
+# Sidebar filter
+# Choose 'tag' or 'category' as filter in sidebar.
+filter: 'category'
+recent_num: 20
+
+# Social account
+twitter: hsiang
+weibo: hsiang
+github: hsiang
+instagram: hsiang
+linkedin: hsiang
+
+# avatar and Favicon
+avatar: assets/img/custom-avatar.png
+favicon: assets/img/up-avatar.png
+#avatar: http://7u2ho6.com1.z0.glb.clouddn.com/site-avatar.png
+#favicon: http://7u2ho6.com1.z0.glb.clouddn.com/site-favicon.ico
+
+# disqus config
+disqus:
+  shortname: hsiang-zh
+
+# google analytics config
+ga:
+  id: UA-54767140-1
+  url: https://hsiangcn.github.io/
+
+# Build settings
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+highlighter: rouge
+mathjax: disabled
+sass:
+  style: compressed
+
+# Jekyll Plugin
+# https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
