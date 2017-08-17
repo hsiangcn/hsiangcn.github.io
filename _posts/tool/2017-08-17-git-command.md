@@ -7,7 +7,7 @@ keywords: GIT
 ---
 
 # git简略使用教程  
-	到官网下载git并进行安装 [https://git-scm.com/downloads][git下载]  
+	到官网下载git并进行安装 [https://git-scm.com/downloads](git下载)  
 
 ### 设置用户的姓名和邮件，使用以下命令 
 	git config --global user.name "name"  
