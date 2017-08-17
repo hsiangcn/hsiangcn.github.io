@@ -31,20 +31,20 @@ tac的功能是将文件从最后一行开始倒过来将内容数据输出到�
 more的功能是将文件从第一行开始，根据输出窗口的大小，适当的输出文件内容。当一页无法全部输出时，可以用“回车键”向下翻行，用“空格键”向下翻页。退出查看页面，请按“q”键。
 另外，more还可以配合管道符“|”（pipe）使用，例如:ls -al | more
 
-more的语法：more 文件名
-&npsp;&npsp;&npsp;&npsp;Enter 向下n行，需要定义，默认为1行；
-&npsp;&npsp;&npsp;&npsp;Ctrl f 向下滚动一屏；
-&npsp;&npsp;&npsp;&npsp;空格键 向下滚动一屏；
-&npsp;&npsp;&npsp;&npsp;Ctrl b 返回上一屏；
-&npsp;&npsp;&npsp;&npsp;= 输出当前行的行号；
-&npsp;&npsp;&npsp;&npsp;:f 输出文件名和当前行的行号；
-&npsp;&npsp;&npsp;&npsp;v 调用vi编辑器；
-&npsp;&npsp;&npsp;&npsp;! 命令 调用Shell，并执行命令；
-&npsp;&npsp;&npsp;&npsp;q 退出more
+##### more的语法：more 文件名
+&npsp;&npsp;&npsp;&npsp; Enter 向下n行，需要定义，默认为1行；
+&npsp;&npsp;&npsp;&npsp; Ctrl f 向下滚动一屏；
+&npsp;&npsp;&npsp;&npsp; 空格键 向下滚动一屏；
+&npsp;&npsp;&npsp;&npsp; Ctrl b 返回上一屏；
+&npsp;&npsp;&npsp;&npsp; = 输出当前行的行号；
+&npsp;&npsp;&npsp;&npsp; :f 输出文件名和当前行的行号；
+&npsp;&npsp;&npsp;&npsp; v 调用vi编辑器；
+&npsp;&npsp;&npsp;&npsp; ! 命令 调用Shell，并执行命令；
+&npsp;&npsp;&npsp;&npsp; q 退出more
 
 less的功能和more相似，但是使用more无法向前翻页，只能向后翻。  
 less可以使用【pageup】和【pagedown】键进行前翻页和后翻页，这样看起来更方便。  
-#####less的语法：less 文件名
+##### less的语法：less 文件名
 
 less还有一个功能，可以在文件中进行搜索你想找的内容，假设你想在文件中查找有没有一个字符串，那么你可以这样来做：
 ##### less 文件名
@@ -63,7 +63,7 @@ tail的功能恰好和head相反，只显示最后几行内容
 ### 4.nl
 
 nl的功能和cat -n一样，同样是从第一行输出全部内容，并且把行号显示出来
-#####nl的语法：nl 文件名
+##### nl的语法：nl 文件名
 
 ### 5.tailf
 
@@ -71,10 +71,11 @@ tailf命令几乎等同于tail -f，严格说来应该与tail --follow=name更�
 与tail -f不同的是，如果文件不增长，它不会去访问磁盘文件。tailf特别适合那些便携机上跟踪日志文件，因为它能省电，因为减少了磁盘访问嘛。
 tailf命令不是个脚本，而是一个用C代码编译后的二进制执行文件，某些Linux安装之后没有这个命令，本文提供了怎么编译安装tailf命令的方法。
 面就谈谈二者的区别：
-    1. tailf 总是从文件开头一点一点的读， 而tail -f 则是从文件尾部开始读
-    2. tailf check文件增长时，使用的是文件名， 用stat系统调用；而tail -f 则使用的是已打开的文件描述符； 注：tail 也可以做到类似跟踪文件名的效果； 但是tail总是使用fstat系统调用，而不是stat系统调用；结果就是：默认情况下，当tail的文件被偷偷删除时，tail是不知道的，而tailf是知道的。
-    常用参数
-        格式：tailf logfile
+    1. tailf 总是从文件开头一点一点的读， 而tail -f 则是从文件尾部开始读</br>
+    2. tailf check文件增长时，使用的是文件名， 用stat系统调用；而tail -f 则使用的是已打开的文件描述符； 注：tail 也可以做到类似跟踪文件名的效果；
+     但是tail总是使用fstat系统调用，而不是stat系统调用；结果就是：默认情况下，当tail的文件被偷偷删除时，tail是不知道的，而tailf是知道的。
+    常用参数</br>
+        格式：tailf logfile</br>
 
     动态跟踪日志文件logfile，最初的时候打印文件的最后10行内容。
     关闭 `:set nonu`
