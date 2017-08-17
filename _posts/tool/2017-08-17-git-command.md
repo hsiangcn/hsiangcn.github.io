@@ -7,7 +7,7 @@ keywords: GIT
 ---
 
 # git简略使用教程  
-	到官网下载git并进行安装 [https://git-scm.com/downloads](git下载)  
+	到官网下载git并进行安装 [git下载](https://git-scm.com/downloads)  
 
 ### 设置用户的姓名和邮件，使用以下命令 
 	git config --global user.name "name"  
@@ -20,22 +20,22 @@ git的全局变量有130多个，只有这两个是必须设置的。最后可�
 
 ### 一些常用命令
 
-	git clone git地址 本地地址   
+	-git clone git地址 本地地址   
 	-- 从远程版本库中拷贝到本地来  
 
-	git log : 查看日志
+	--git log : 查看日志
 
-	git gc :压缩版本库，优化历史记录
+	*git gc :压缩版本库，优化历史记录
 
-	git archive:导出版本库
+	* git archive:导出版本库
 
-	git init:初始化版本库
+	**git init:初始化版本库
 
-	git add:增加一个或者多个文件到版本库暂存区中
+	** git add:增加一个或者多个文件到版本库暂存区中
 
-	git commit:提交更新版本库
+	***git commit:提交更新版本库
 
-	git branch:列出本地分支
+	*** ````git branch:列出本地分支
 
 	git diff :比较差异
 
