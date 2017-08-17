@@ -77,6 +77,6 @@ tailf命令不是个脚本，而是一个用C代码编译后的二进制执行�
     常用参数</br>
         格式：tailf logfile</br>
 
-    动态跟踪日志文件logfile，最初的时候打印文件的最后10行内容。  
+    动态跟踪日志文件logfile，最初的时候打印文件的最后10行内容。 
     关闭 `:set nonu`  
     开启 `:set number`  
