@@ -20,10 +20,10 @@ tailf  类似于tail-f
 ### 1.cat 与 tac
 
 cat的功能是将文件从第一行开始连续的将内容输出在屏幕上。但是cat并不常用，原因是当文件大，行数比较多时，屏幕无法全部容下时，只能看到一部分内容。
-cat语法：cat [-n]  文件名 （-n ： 显示时，连行号一起输出）
+##### cat语法：cat [-n]  文件名 （-n ： 显示时，连行号一起输出）
 
 tac的功能是将文件从最后一行开始倒过来将内容数据输出到屏幕上。我们可以发现，tac实际上是cat反过来写。这个命令也不常用。  
-tac语法：tac 文件名。  
+##### tac语法：tac 文件名。
 
 
 ### 2.more和less（常用）
@@ -32,22 +32,22 @@ more的功能是将文件从第一行开始，根据输出窗口的大小，适�
 另外，more还可以配合管道符“|”（pipe）使用，例如:ls -al | more
 
 more的语法：more 文件名
-    Enter 向下n行，需要定义，默认为1行；
-    Ctrl f 向下滚动一屏；
-    空格键 向下滚动一屏；
-    Ctrl b 返回上一屏；
-    = 输出当前行的行号；
-    :f 输出文件名和当前行的行号；
-    v 调用vi编辑器；
-    ! 命令 调用Shell，并执行命令；
-    q 退出more
+&npsp;&npsp;&npsp;&npsp;Enter 向下n行，需要定义，默认为1行；
+&npsp;&npsp;&npsp;&npsp;Ctrl f 向下滚动一屏；
+&npsp;&npsp;&npsp;&npsp;空格键 向下滚动一屏；
+&npsp;&npsp;&npsp;&npsp;Ctrl b 返回上一屏；
+&npsp;&npsp;&npsp;&npsp;= 输出当前行的行号；
+&npsp;&npsp;&npsp;&npsp;:f 输出文件名和当前行的行号；
+&npsp;&npsp;&npsp;&npsp;v 调用vi编辑器；
+&npsp;&npsp;&npsp;&npsp;! 命令 调用Shell，并执行命令；
+&npsp;&npsp;&npsp;&npsp;q 退出more
 
 less的功能和more相似，但是使用more无法向前翻页，只能向后翻。  
 less可以使用【pageup】和【pagedown】键进行前翻页和后翻页，这样看起来更方便。  
-less的语法：less 文件名  
+#####less的语法：less 文件名
 
-less还有一个功能，可以在文件中进行搜索你想找的内容，假设你想在passwd文件中查找有没有weblogic字符串，那么你可以这样来做：
-[root@redhat etc]# less 文件名
+less还有一个功能，可以在文件中进行搜索你想找的内容，假设你想在文件中查找有没有一个字符串，那么你可以这样来做：
+##### less 文件名
 然后输入：/搜索内容
 回车
 此时如果有搜索内容字符串，linux会把该字符已高亮方式显示。
@@ -56,14 +56,14 @@ less还有一个功能，可以在文件中进行搜索你想找的内容，假�
 ### 3.head和tail
 
 head和tail通常使用在只需要读取文件的前几行或者后几行的情况下使用。head的功能是显示文件的前几行内容
-head的语法：head [n number] 文件名 (number 显示行数)
+##### head的语法：head [n number] 文件名 (number 显示行数)
 tail的功能恰好和head相反，只显示最后几行内容
-tail的语法:tail [-n number] 文件名
+##### tail的语法:tail [-n number] 文件名
 
 ### 4.nl
 
 nl的功能和cat -n一样，同样是从第一行输出全部内容，并且把行号显示出来
-nl的语法：nl 文件名
+#####nl的语法：nl 文件名
 
 ### 5.tailf
 
