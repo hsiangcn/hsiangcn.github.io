@@ -35,7 +35,7 @@ git的全局变量有130多个，只有这两个是必须设置的。最后可�
 
 	***git commit:提交更新版本库
 
-	*** ````git branch:列出本地分支
+	*** git branch:列出本地分支
 
 	git diff :比较差异
 
