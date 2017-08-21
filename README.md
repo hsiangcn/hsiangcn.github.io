@@ -1,6 +1,6 @@
 ### 我的博客
 
-地址：[https://hsiangcn.github.io/](https://hsiangcn.github.io/)
+地址：[hsiang.org](hsiang.org)
 
 ### 安装说明
 
