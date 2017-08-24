@@ -6,8 +6,6 @@ tags: GIT
 keywords: GIT
 ---
 
-# git简略使用教程  
-
 到官网下载git并进行安装[git下载](https://git-scm.com/downloads)  
 
 ### 设置用户的姓名和邮件，使用以下命令 
