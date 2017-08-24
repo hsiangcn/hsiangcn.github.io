@@ -2,14 +2,14 @@
 layout: post
 title:  三大开源运维监控工具zabbix、nagios和open-falcon优缺点详细比较
 category: 工具
-tags: 监控
-keywords: 监控
+tags: 运维、监控
+keywords: 运维、监控
 ---
 
 ## 三大开源运维监控工具zabbix、nagios和open-falcon优缺点详细比较  
 借鉴别人记录下，避免需要用的时候到处找
 
-![zabbix-nagios-falcon](img/zabbix-nagios-falcon.png)
+![Image text](img/zabbix-nagios-falcon.png)
 
 
 #### zabbix介绍  
@@ -64,3 +64,24 @@ keywords: 监控
   [open-falcon教学文档](https://book.open-falcon.org/zh/intro/index.html)
   
 #### nagios介绍
+   Nagios是一款开源的免费网络监视工具，能有效监控Windows、Linux和Unix的主机状态，交换机路由器等网络设备，打印机等。在系统或服务状态异常时发出邮件或短信报警第一时间通知网站运维人员，在状态恢复后发出正常的邮件或短信通知。
+   
+###### Nagios 可以监控的功能有  
+1. 监控网络服务（SMTP、POP3、HTTP、NNTP、PING等）；
+2. 监控主机资源（处理器负荷、磁盘利用率等）；
+3. 简单地插件设计使得用户可以方便地扩展自己服务的检测方法；
+4. 并行服务检查机制；
+5. 具备定义网络分层结构的能力，用"parent"主机定义来表达网络主机间的关系，这种关系可被用来发现和明晰主机宕机或不可达状态；
+6. 当服务或主机问题产生与解决时将告警发送给联系人（通过EMail、短信、用户定义方式）；
+7. 可以定义一些处理程序，使之能够在服务或者主机发生故障时起到预防作用；
+8. 自动的日志滚动功能；
+9. 可以支持并实现对主机的冗余监控；
+10. 可选的WEB界面用于查看当前的网络状态、通知和故障历史、日志文件等；[1] 
+11. 可以通过手机查看系统监控信息；
+12. 可指定自定义的事件处理控制器；
+
+###### 系统需求编辑
+Nagios所需要的运行条件是机器必须可以运行Linux（或是Unix变种）并且有C语言编译器。你必须正确地配置TCP/IP协议栈以使大多数的服务检测可以通过网络得以进行。你需要但并非必须正确地配置Nagios里的CGIs程序，而一旦你要使用CGI程序时，你必须要安装以下这些软件...一个WEB服务（最好是Apache）
+
+
+[介绍一篇比较详细的比较](http://blog.csdn.net/messiademo/article/details/52046822)
