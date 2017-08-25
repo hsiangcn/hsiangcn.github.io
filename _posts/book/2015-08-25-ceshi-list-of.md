@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Linux 常用命令 -- 查看文件内容命令
-category: Liunx
-tags: Liunx
+category: 读书
+tags: 阅读,书单,2013
 keywords: Liunx
 ---
 
