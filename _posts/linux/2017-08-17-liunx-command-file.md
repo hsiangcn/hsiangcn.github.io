@@ -6,6 +6,8 @@ tags: Liunx
 keywords: Liunx
 ---
 
+# Linux下查看文件内容的命令h1
+
 ## Linux下查看文件内容的命令
 
 * cat     由第一行开始显示内容，并将所有内容输出  
