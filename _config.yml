@@ -33,7 +33,7 @@ disqus:
 # google analytics config
 ga:
   id: UA-54767140-1
-  url: https://hsiangcn.github.io/
+  url: hsiang.org
 
 # Build settings
 permalink: /:year/:month/:day/:title.html
