@@ -24,7 +24,7 @@ Ctrl+Shift+F，全局查找
 Ctrl+Tab，转到下一个拆分器   
 Alt+Q，可以看到当前方法的声明  
 
-<a name="基本快捷键">2、基本快捷键</a>
+<a name="基本快捷键">2、基本快捷键</a>  
 Ctrl+Shift + Enter，语句完成  
 “！”，否定完成，输入表达式时按 “！”键  
 Ctrl+E，最近的文件  
