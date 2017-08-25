@@ -21,7 +21,8 @@ Alt+Insert，可以生成构造器/Getter/Setter等
 Ctrl+N，可以快速打开类  
 Ctrl+Shift+N，可以快速打开文件  
 Ctrl+Shift+F，全局查找  
-Ctrl+Tab，转到下一个拆分器    
+Ctrl+Tab，转到下一个拆分器   
+Alt+Q，可以看到当前方法的声明  
 
 <a name="基本快捷键">2、基本快捷键</a>
 Ctrl+Shift + Enter，语句完成  
