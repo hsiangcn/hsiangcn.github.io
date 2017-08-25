@@ -29,6 +29,7 @@ Ctrl+H，显示类结构图（类的继承层次）
 Ctrl+Shift+U，大小写转化  
 Ctrl+G，定位行  
 Ctrl+U，转到父类  
+Ctrl+Alt+O，优化导入的类和包
 
 <a name="基本快捷键">2、基本快捷键</a>  
 Ctrl+Shift + Enter，语句完成  
