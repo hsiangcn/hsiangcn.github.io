@@ -23,7 +23,7 @@ $(function() {
     toc.empty().append('<li class="post-toc-li post-toc-h1"><a href="#post-title" class="js-anchor-link">' + $('#post-title').text() + '</a></li>');
 
     // Generate entries for h2 and h3
-    $('.post').children('h2,h3').each(function() {
+    $('.post').children('h1,h2,h3,h4').each(function() {
       // Generate random ID for each heading
       $(this).attr('id', function() {
         var ID = "", alphabet = "abcdefghijklmnopqrstuvwxyz";
@@ -34,11 +34,21 @@ $(function() {
         return ID;
       });
 
-      if ($(this).prop("tagName") == 'H2') {
+        if ($(this).prop("tagName") == 'H1') {
+            toc.append('<li class="post-toc-li post-toc-h1"><a href="#' + $(this).attr('id') + '" class="js-anchor-link">' + $(this).text() + '</a></li>');
+        } else if ($(this).prop("tagName") == 'H2') {
+            toc.append('<li class="post-toc-li post-toc-h2"><a href="#' + $(this).attr('id') + '" class="js-anchor-link">' + $(this).text() + '</a></li>');
+        } else if ($(this).prop("tagName") == 'H3') {
+            toc.append('<li class="post-toc-li post-toc-h3"><a href="#' + $(this).attr('id') + '" class="js-anchor-link">' + $(this).text() + '</a></li>');
+        } else ($(this).prop("tagName") == 'H2') {
+            toc.append('<li class="post-toc-li post-toc-h4"><a href="#' + $(this).attr('id') + '" class="js-anchor-link">' + $(this).text() + '</a></li>');
+        }
+
+      /*if ($(this).prop("tagName") == 'H2') {
         toc.append('<li class="post-toc-li post-toc-h2"><a href="#' + $(this).attr('id') + '" class="js-anchor-link">' + $(this).text() + '</a></li>');
       } else {
         toc.append('<li class="post-toc-li post-toc-h3"><a href="#' + $(this).attr('id') + '" class="js-anchor-link">' + $(this).text() + '</a></li>');
-      }
+      }*/
     });
 
     // Smooth scrolling
