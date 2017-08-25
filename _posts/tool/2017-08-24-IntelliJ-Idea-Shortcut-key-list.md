@@ -22,7 +22,13 @@ Ctrl+N，可以快速打开类
 Ctrl+Shift+N，可以快速打开文件  
 Ctrl+Shift+F，全局查找  
 Ctrl+Tab，转到下一个拆分器   
-Alt+Q，可以看到当前方法的声明  
+Ctrl+Q，显示注释文档  
+Ctrl+E，最近的文件  
+Ctrl+Shift+E，最近更改的文件  
+Ctrl+H，显示类结构图（类的继承层次）  
+Ctrl+Shift+U，大小写转化  
+Ctrl+G，定位行  
+Ctrl+U，转到父类  
 
 <a name="基本快捷键">2、基本快捷键</a>  
 Ctrl+Shift + Enter，语句完成  
