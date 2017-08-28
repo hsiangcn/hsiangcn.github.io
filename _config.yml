@@ -14,11 +14,11 @@ filter: 'category'
 recent_num: 20
 
 # Social account
-twitter: hsiang
-weibo: hsiang
-github: hsiang
-instagram: hsiang
-linkedin: hsiang
+#twitter: hsiang
+#weibo: hsiang
+github: hsiangcn
+#instagram: hsiang
+#linkedin: hsiang
 
 # avatar and Favicon
 avatar: assets/img/custom-avatar.png
