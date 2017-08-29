@@ -35,7 +35,7 @@ keywords: java、ASCII
         }
     }
 
-## 2. 使用截取方式
+## 2. 根据ASCII表
     /**
      *   字符串的首字母大写转换  
      * @param name
