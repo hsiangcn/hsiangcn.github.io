@@ -170,7 +170,7 @@ keywords: java
         return name;
     }
     
-　　[详情请见首字母大小写转换](2017-08-29-capitalize_initial_letters.md)
+　　[详情请见首字母大小写转换](http://hsiang.org/2017/08/29/capitalize_initial_letters.html)
 
 ### 3.3、对象复制
 　　**该方法的效率较低，在使用的时候请慎重考虑。**
