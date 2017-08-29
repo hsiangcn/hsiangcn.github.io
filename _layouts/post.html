@@ -16,7 +16,7 @@ layout: default
 <div class="post-share">
   <div class="container">
     {% if site.github %}
-      <a href="https://github.com/hsiangcn/hsiangcn.github.io?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&title={{ page.title }}" target="_blank" class="post-share-icon github"></a>
+    <a href="https://github.com/{{ site.github }}" class="sidebar-social-icon github" target="_blank"></a>
     {% endif %}
     {% if site.twitter %}
       <a href="https://twitter.com/share?url={{ page.url | prepend: site.baseurl | prepend: site.url }}&text={{ page.title }}" target="_blank" class="post-share-icon twitter"></a>
