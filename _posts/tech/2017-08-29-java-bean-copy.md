@@ -7,20 +7,20 @@ keywords: java
 ---  
 
 　　BeanUtils.copyProperties() 方法在处理数据类型为日期的属性的值的时候，如果值为空的情况下，判断不出源数据的类型，所以会抛出异常。<br>
-建议使用[ConvertUtils.register](2017-08-29-convertUtils_register.md)为日期类型指定一个为空的情况下使用的默认值，当BeanUtils遇到目标类型为日期格式，并且源数据值为空的情况下，会默认取设置的这个默认值<br>
+　　建议使用[ConvertUtils.register](http://hsiang.org/2017/08/29/convertUtils_register.html)为日期类型指定一个为空的情况下使用的默认值，当BeanUtils遇到目标类型为日期格式，并且源数据值为空的情况下，会默认取设置的这个默认值<br>
 
-## 一、简介
+## 1、 简介
 　　BeanUtils提供对Java反射和自省API的包装。其主要目的是利用反射机制对JavaBean的属性进行处理。
 我们知道，一个JavaBean通常包含了大量的属性，很多情况下，对JavaBean的处理导致大量get/set代码堆积，
 增加了代码长度和阅读代码的难度。
 
-## 二、缺点
+## 2、 缺点
 　　BeanUtils的成本惊人地昂贵，效率要远远的超过超过取数 据、将其复制到对应的 value对象。<br>
 　　**该方法的效率较低，在使用的时候请慎重考虑。**
-## 三、源码
+## 3、 源码
 　　话不多说，直接上源码
 
-### 时间格式化工具类
+### 3.1、 时间格式化工具类
     package com.util;
     
     import java.sql.Timestamp;
@@ -148,8 +148,9 @@ keywords: java
         }
     
     
-    }
-### 首字母大写转换方法
+    }  
+    
+### 3.2、 首字母大写转换方法
     /**
      *  首字母大写转换
      * @param name
@@ -168,9 +169,10 @@ keywords: java
         }
         return name;
     }
+    
 　　[详情请见首字母大小写转换](2017-08-29-capitalize_initial_letters.md)
 
-### 对象复制
+### 3.3、对象复制
 　　**该方法的效率较低，在使用的时候请慎重考虑。**
     
     /**
