@@ -1,7 +1,7 @@
 ---  
 layout: post  
 title: 【转】BeanUtils.copyProperties时日期的拷贝   
-category: 技术  
+category: JAVA  
 tags: java  
 keywords: java  
 ---  

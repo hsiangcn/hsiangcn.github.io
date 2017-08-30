@@ -1,7 +1,7 @@
 ---  
 layout: post  
 title: 利用反射处理-使用BeanUtils.copyProperties复制对象时间问题   
-category: 技术  
+category: JAVA  
 tags: java  
 keywords: java  
 ---  
