@@ -32,44 +32,64 @@ SETNX 是『SET if Not eXists』(如果不存在，则 SET)的简写。<br>
 
 ## 2. 源码
     /**
-	 *  获取锁
-	 *
-	 * @param key  锁的
-	 * @param timeout	获取锁的等待时间，单位： 毫秒
-	 * @param expire	获取锁后设置锁的有效时间，单位：秒
-	 * @return
-	 */
-	public boolean lock(String key, long timeout, int expire) {
-		boolean lock = false;
-		ShardedJedis shardedJedis = null;
+     *  获取锁
+     *
+     * @param key	锁的key
+     * @param timeout	获取锁的等待时间，单位： 毫秒
+     * @param expire	获取锁后设置锁的有效时间，单位：秒
+     * @return
+     */
+    public void lock(String key, long timeout, int expire) {
+        boolean lock = false;
 
-		try {
-			shardedJedis = shardedJedisPool.getResource();
-			//系统计时器的当前值，以毫微秒为单位。
-			long nanoTime = System.nanoTime();
-			//在timeout的时间范围内不断轮询锁
-			while ((System.nanoTime() - nanoTime) < timeout) {
-				//锁不存在的话，设置锁并设置锁过期时间，即加锁
-				if (shardedJedis.setnx(key, key) == 1) {
-					//设置锁过期时间是为了在没有释放,锁的情况下锁过期后消失，不会造成永久阻塞
-					shardedJedis.expire(key, expire);
-					//
-					lock = true;
-					return lock;
-				}
-				if (timeout <= 0L) {
-					//没有设置超时时间，直接退出等待
-					break;
-				}
-				logger.info("  >>>>>  出现锁等待 <<<<<<< ");
-				//短暂休眠，避免可能的活锁
-				Thread.sleep(300);
-			}
-		} catch (Exception e) {
-			throw new RuntimeException("locking error", e);
-		}
-		return lock;
-	}
+        try {
+            // 为防止锁key出现重复，在key的后面增加lock
+            String lockkey = key + "&&lock";
+            long nanoTime = System.nanoTime();
+            timeout = timeout * 1000 * 1000;
+            // 在timeout的时间范围内不断轮询锁,超过timeout的时间没有获取锁则抛出异常
+            while (timeout == 0 || (System.nanoTime() - nanoTime) <= timeout) {
+                if (lockSource(lockkey, expire) == 1) {
+                    // 抢锁成功
+                    lock = true;
+                    break;
+                }
+                logger.info("  >>>>>  出现锁等待 <<<<<<< ");
+                //短暂休眠，避免可能的活锁
+                Thread.currentThread().sleep(50);
+            }
+        } catch (Exception e) {
+            throw new RuntimeException("locking error", e);
+        }
+
+        if (!lock) {
+            new RuntimeException(" >>>>>>>>  抢锁失败  <<<<<<<<<<  ");
+        }
+
+    }
+    
+    /**
+     *  锁 资源
+     *
+     * @param key
+     * @param expire 获取锁后设置锁的有效时间，单位：秒
+     * @return 1 成功，0加锁失败
+     */
+    private int lockSource(String key, int expire) {
+        ShardedJedis shardedJedis = shardedJedisPool.getResource();
+        long i = shardedJedis.setnx(key, key);
+        if (i == 1L && expire > 0) {
+            i = shardedJedis.expire(key, expire);
+            return (int) i;
+        } else {
+            // 如果key没有设置超时时间，将当前超时时间是指到key上
+            if (shardedJedis.ttl(key) == -1) {
+                shardedJedis.expire(key, expire);
+            }
+        }
+
+        return 0;
+    }
 	
 	/**
      * 删除锁
@@ -80,7 +100,7 @@ SETNX 是『SET if Not eXists』(如果不存在，则 SET)的简写。<br>
         ShardedJedis shardedJedis = null;
         try {
             shardedJedis = shardedJedisPool.getResource();
-            shardedJedis.del(key);//直接删除
+            shardedJedis.del(key);
         } catch (Throwable e) {
             throw new RuntimeException("unlock error", e);
         }
