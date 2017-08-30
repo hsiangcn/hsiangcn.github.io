@@ -1,7 +1,7 @@
 ---  
 layout: post  
 title: Redis实现分布式锁  
-category: 技术  
+category: REDIS  
 tags: java、Redis  
 keywords: java、Redis  
 --- 

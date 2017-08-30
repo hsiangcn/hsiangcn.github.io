@@ -1,7 +1,7 @@
 ---  
 layout: post  
 title: 字符串的首字母大小写转换  
-category: 技术  
+category: JAVA  
 tags: java、ASCII  
 keywords: java、ASCII  
 ---  
