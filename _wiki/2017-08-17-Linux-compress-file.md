@@ -1,7 +1,7 @@
 ---  
 layout: wiki
 title: Linux/Unix 解压命令大全
-category: Liunx
+categories: Liunx
 tags: Liunx
 description: Linux/Unix 下解压命令大全
 keywords: Liunx

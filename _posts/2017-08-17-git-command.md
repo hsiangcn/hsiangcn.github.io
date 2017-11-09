@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git简略使用教程
-category: 工具
+categories: 工具
 description: git简略使用教程
 keywords: GIT
 ---

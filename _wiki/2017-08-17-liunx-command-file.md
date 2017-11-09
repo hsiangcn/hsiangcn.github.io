@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: Linux/Unix 查看文件内容命令
-category: Liunx
+categories: Liunx
 tags: Liunx
 description: Linux/Unix 常用命令 -- 查看文件内容命令
 keywords: Liunx

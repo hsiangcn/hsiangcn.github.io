@@ -1,7 +1,7 @@
 ---
 layout: wiki
 title: Linux/Unix 一些常用命令
-category: Liunx
+categories: Liunx
 tags: Liunx
 description: Linux/Unix 一些常用命令
 keywords: Liunx
