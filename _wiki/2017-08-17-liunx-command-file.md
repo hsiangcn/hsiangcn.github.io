@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  Linux 常用命令 -- 查看文件内容命令
+layout: wiki
+title:  Linux/Unix
 category: Liunx
 tags: Liunx
+description: Linux 常用命令 -- 查看文件内容命令 
 keywords: Liunx
 ---
 

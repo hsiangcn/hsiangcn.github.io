@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  Linux 一些常用命令
+layout: wiki
+title:  Linux/Unix
 category: Liunx
 tags: Liunx
+description: Linux 一些常用命令
 keywords: Liunx
 ---
 
