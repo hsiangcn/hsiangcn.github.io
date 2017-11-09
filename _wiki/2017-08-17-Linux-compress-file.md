@@ -1,10 +1,10 @@
 ---  
-layout: wiki  
-title:  Linux/Unix 解压命令大全  
-category: Liunx  
-tags: Liunx  
-description: Linux/Unix 下解压命令大全  
-keywords: Liunx  
+layout: wiki
+title: Linux/Unix 解压命令大全
+category: Liunx
+tags: Liunx
+description: Linux/Unix 下解压命令大全
+keywords: Liunx
 ---  
 
 ## 1 .tar
