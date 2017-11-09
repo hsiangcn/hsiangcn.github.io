@@ -1,10 +1,10 @@
 ---
-layout: wiki
-title:  Linux/Unix
-category: Liunx
-tags: Liunx
-description: Linux 一些常用命令
-keywords: Liunx
+layout: wiki  
+title:  Linux/Unix 一些常用命令  
+category: Liunx  
+tags: Liunx  
+description: Linux/Unix 一些常用命令  
+keywords: Liunx  
 ---
 
 ## 1. mkdir 创建目录

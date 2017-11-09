@@ -1,10 +1,10 @@
 ---
-layout: wiki
-title:  Linux/Unix
-category: Liunx
-tags: Liunx
-description: Linux 常用命令 -- 查看文件内容命令 
-keywords: Liunx
+layout: wiki  
+title:  Linux/Unix 查看文件内容命令  
+category: Liunx  
+tags: Liunx  
+description: Linux/Unix 常用命令 -- 查看文件内容命令   
+keywords: Liunx  
 ---
 
 ## Linux下查看文件内容的命令
@@ -82,3 +82,7 @@ tailf命令不是个脚本，而是一个用C代码编译后的二进制执行�
 动态跟踪日志文件logfile，最初的时候打印文件的最后10行内容。    
 - 关闭 `:set nonu`    
 - 开启 `:set number`   
+
+### 5. .gz查看
+
+gunzip -c xxx.gz | less
