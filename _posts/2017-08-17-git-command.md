@@ -1,9 +1,9 @@
 ---
-layout: post
-title:  git简略使用教程
-category: 工具
-tags: GIT
-keywords: GIT
+layout: post  
+title:  git简略使用教程  
+category: 工具  
+description: git简略使用教程
+keywords: GIT  
 ---
 
 到官网下载git并进行安装[git下载](https://git-scm.com/downloads)  
