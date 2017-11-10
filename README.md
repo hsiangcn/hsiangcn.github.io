@@ -53,10 +53,6 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 ## 贴心提示
 
-1. 排版建议遵照一定的规范，推荐 [中文文案排版指北（简体中文版）][1]。
-
-2. 在本地预览博客效果可以参考 [Setting up your Pages site locally with Jekyll][2]。
-
 ## 经验与思考
 
 * 简约，尽量每个页面都不展示多余的内容。
@@ -74,6 +70,3 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 ## 致谢
 
 本博客外观基于 [DONGChuan](http://dongchuan.github.io) 修改，感谢！
-
-[1]: https://github.com/mzlogin/chinese-copywriting-guidelines
-[2]: https://help.github.com/articles/setting-up-your-pages-site-locally-with-jekyll/
