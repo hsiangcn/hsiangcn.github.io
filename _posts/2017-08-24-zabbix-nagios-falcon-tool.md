@@ -8,7 +8,7 @@ keywords: 运维, 监控, zabbix, nagios, open-falcon
   
 借鉴别人记录下，避免需要用的时候到处找
 
-![cover](/img/zabbix-nagios-falcon.png)
+![cover](/images/posts/tools/zabbix-nagios-falcon.png)
 
 
 #### zabbix介绍  
