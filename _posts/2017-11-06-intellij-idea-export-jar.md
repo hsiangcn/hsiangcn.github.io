@@ -28,7 +28,7 @@ keywords: IntelliJ Idea、java、工具
 ![Put_into_Output_Root](/images/posts/JetBrains/Intellij-export-jar/6.png)
 ![Extract_Into_Output_Root](/images/posts/JetBrains/Intellij-export-jar/7.png)
 
-注意：以上步骤完成务必检查项目根目录下的MANIFEST.MF文件，查看Main-Class是否指向正确的main方法，路径是否正确，不能有空格，不能有空格，不能有空格。
+**注意：以上步骤完成务必检查项目根目录下的MANIFEST.MF文件，查看Main-Class是否指向正确的main方法，路径是否正确，不能有空格，不能有空格，不能有空格。**
 
 ![Put_into_Output_Root](/images/posts/JetBrains/Intellij-export-jar/8.png)
 ![Put_into_Output_Root](/images/posts/JetBrains/Intellij-export-jar/9.png)
